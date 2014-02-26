@@ -1,0 +1,34 @@
+{
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://packages.alex-panshin.me"
+        }
+    ],
+    "name": "mailvan/mailvan-client-getresponse",
+    "type": "library",
+    "description": "GetResponse adapter for Mailvan service",
+    "keywords": ["mailing list", "api", "wrapper", "php"],
+    "homepage": "http://github.com/mailvan/mailvan-client-getresponse",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrey Yaroshenko",
+            "email": "da3n00r@gmail.com",
+            "role": "Lead Developer"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Mailvan": "src/",
+            "Mailvan\\Tests": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=5.4",
+        "mailvan/mailvan-core": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    }
+}
