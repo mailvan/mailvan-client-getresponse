@@ -1,0 +1,130 @@
+{
+    "name": "GetResponse",
+    "version": "2.0",
+    "operations": {
+        "addContact": {
+            "httpMethod": "POST",
+            "uri": "",
+            "summary": "Subscribe user to list",
+            "responseClass": "IM\\MailingList\\Client\\GetResponse\\Response\\Response",
+            "parameters":{
+                "jsonrpc": {
+                    "location": "json",
+                    "required": "true",
+                    "default": "2.0"
+                },
+                "method": {
+                    "location": "json",
+                    "required": true,
+                    "default": "add_contact"
+                },
+                "id": {
+                    "location": "json"
+                },
+                "params": {
+                    "location": "json"
+                }
+            }
+        },
+
+        "getCampaigns":{
+            "httpMethod": "POST",
+            "uri": "",
+            "summary": "Get campaigns list",
+            "responseClass": "IM\\MailingList\\Client\\GetResponse\\Response\\SubscriptionLists",
+            "parameters": {
+                "jsonrpc": {
+                    "location": "json",
+                    "required": true,
+                    "default": "2.0"
+                },
+                "method": {
+                    "location": "json",
+                    "required": true,
+                    "default": "get_campaigns"
+                },
+                "id": {
+                    "location": "json"
+                },
+                "params": {
+                    "location": "json"
+                }
+            }
+        },
+
+        "getContacts":{
+            "httpMethod": "POST",
+            "uri": "",
+            "summary": "Get contacts list",
+            "responseClass": "IM\\MailingList\\Client\\GetResponse\\Response\\Contacts",
+            "parameters": {
+                "jsonrpc": {
+                    "location": "json",
+                    "required": true,
+                    "default": "2.0"
+                },
+                "method": {
+                    "location": "json",
+                    "required": true,
+                    "default": "get_contacts"
+                },
+                "id": {
+                    "location": "json"
+                },
+                "params": {
+                    "location": "json"
+                }
+            }
+        },
+
+        "moveContact":{
+            "httpMethod": "POST",
+            "uri": "",
+            "summary": "Move contact to another campaign",
+            "responseClass": "IM\\MailingList\\Client\\GetResponse\\Response\\Response",
+            "parameters": {
+                "jsonrpc": {
+                    "location": "json",
+                    "required": true,
+                    "default": "2.0"
+                },
+                "method": {
+                    "location": "json",
+                    "required": true,
+                    "default": "move_contact"
+                },
+                "id": {
+                    "location": "json"
+                },
+                "params": {
+                    "location": "json"
+                }
+            }
+        },
+
+        "deleteContact":{
+            "httpMethod": "POST",
+            "uri": "",
+            "summary": "Delete contact from campaign",
+            "responseClass": "IM\\MailingList\\Client\\GetResponse\\Response\\Response",
+            "parameters": {
+                "jsonrpc": {
+                    "location": "json",
+                    "required": true,
+                    "default": "2.0"
+                },
+                "method": {
+                    "location": "json",
+                    "required": true,
+                    "default": "delete_contact"
+                },
+                "id": {
+                    "location": "json"
+                },
+                "params": {
+                    "location": "json"
+                }
+            }
+        }
+    }
+}
